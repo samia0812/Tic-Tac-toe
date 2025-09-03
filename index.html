@@ -3,29 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tic Tac Toe</title>
+  <title>Admin Dashboard</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <h1>Tic Tac Toe</h1>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="material-icons">dashboard</span>
+        <h1>Dashboard</h1>
+      </div>
+      <nav class="nav-main">
+        <ul>
+          <li><span class="material-icons">home</span> Home</li>
+          <li><span class="material-icons">person</span> Profile</li>
+          <li><span class="material-icons">message</span> Messages</li>
+          <li><span class="material-icons">history</span> History</li>
+          <li><span class="material-icons">task</span> Tasks</li>
+          <li><span class="material-icons">groups</span> Communities</li>
+        </ul>
+      </nav>
+      <nav class="nav-secondary">
+        <ul>
+          <li><span class="material-icons">settings</span> Settings</li>
+          <li><span class="material-icons">help</span> Support</li>
+          <li><span class="material-icons">privacy_tip</span> Privacy</li>
+        </ul>
+      </nav>
+    </aside>
 
-  <div id="player-setup">
-    <input type="text" id="player1-name" placeholder="Player 1 Name">
-    <input type="text" id="player2-name" placeholder="Player 2 Name">
-    <button id="start-btn">Start Game</button>
+    <header class="header">
+      <div class="search-bar">
+        <span class="material-icons">search</span>
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="user-info">
+        <span class="material-icons">notifications</span>
+        <span class="material-icons">account_circle</span>
+        <span class="username">Morgan Oakley</span>
+      </div>
+      <div class="welcome">
+        <span class="material-icons">account_circle</span>
+        <div>
+          <p>Hi there,</p>
+          <h2>Morgan Oakley (@morgan)</h2>
+        </div>
+      </div>
+      <div class="header-buttons">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="projects">
+        <h3>Your Projects</h3>
+        <div class="projects-grid">
+          <div class="card">
+            <h4>Super Cool Project</h4>
+            <div class="card-actions">
+              <span class="material-icons">star_border</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </div>
+          <div class="card">
+            <h4>Less Cool Project</h4>
+            <div class="card-actions">
+              <span class="material-icons">star_border</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </div>
+          <div class="card">
+            <h4>Impossible App</h4>
+            <div class="card-actions">
+              <span class="material-icons">star_border</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </div>
+          <div class="card">
+            <h4>Easy Peasy App</h4>
+            <div class="card-actions">
+              <span class="material-icons">star_border</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="right-panel">
+        <section class="announcements">
+          <h3>Announcements</h3>
+          <div class="panel-card">
+            <h4>Site Maintenance</h4>
+            <p>Our site will be down for updates this weekend.</p>
+          </div>
+          <div class="panel-card">
+            <h4>Community Share Day</h4>
+            <p>Join us Friday for a day of collaboration and fun!</p>
+          </div>
+          <div class="panel-card">
+            <h4>Updated Privacy Policy</h4>
+            <p>Please review our updated terms and conditions.</p>
+          </div>
+        </section>
+
+        <section class="trending">
+          <h3>Trending</h3>
+          <div class="trend-item">
+            <span class="material-icons">account_circle</span>
+            <div>
+              <p>@tegan</p>
+              <span>World Peace Builder</span>
+            </div>
+          </div>
+          <div class="trend-item">
+            <span class="material-icons">account_circle</span>
+            <div>
+              <p>@morgan</p>
+              <span>Super Cool Project</span>
+            </div>
+          </div>
+          <div class="trend-item">
+            <span class="material-icons">account_circle</span>
+            <div>
+              <p>@kendall</p>
+              <span>Life Changing App</span>
+            </div>
+          </div>
+          <div class="trend-item">
+            <span class="material-icons">account_circle</span>
+            <div>
+              <p>@alex</p>
+              <span>No Traffic Maker</span>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </main>
   </div>
-
-  <div id="scoreboard">
-    <span id="score1">0</span> : <span id="score2">0</span>
-  </div>
-
-  <h2 id="turn-indicator"></h2>
-
-  <div id="gameboard" class="board"></div>
-
-  <div id="result"></div>
-  <button id="restart-btn">Restart Game</button>
-
-  <script src="script.js"></script>
 </body>
 </html>
