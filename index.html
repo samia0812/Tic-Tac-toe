@@ -3,77 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard</title>
+  <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
+  <h1>Tic Tac Toe</h1>
 
-    <aside class="sidebar">
-      <h2>Dashboard</h2>
-      <nav>
-        <ul>
-          <li><span class="material-symbols-outlined">home</span> Home</li>
-          <li><span class="material-symbols-outlined">person</span> Profile</li>
-          <li><span class="material-symbols-outlined">chat</span> Messages</li>
-          <li><span class="material-symbols-outlined">history</span> History</li>
-          <li><span class="material-symbols-outlined">task</span> Tasks</li>
-          <li><span class="material-symbols-outlined">groups</span> Communities</li>
-        </ul>
-        <ul>
-          <li><span class="material-symbols-outlined">settings</span> Settings</li>
-          <li><span class="material-symbols-outlined">help</span> Support</li>
-          <li><span class="material-symbols-outlined">verified_user</span> Privacy</li>
-        </ul>
-      </nav>
-    </aside>
-    <header class="header">
-      <div class="search-bar">
-        <span class="material-symbols-outlined">search</span>
-        <input type="text" placeholder="Search...">
-      </div>
-      <div class="user-info">
-        <span class="material-symbols-outlined">notifications</span>
-        <span class="material-symbols-outlined">account_circle</span>
-        <p>Samia</p>
-      </div>
-    </header>
-
-    <main class="main">
-      <section class="projects">
-        <h3>Your Projects</h3>
-        <div class="cards">
-          <div class="card">Project One</div>
-          <div class="card">Project Two</div>
-          <div class="card">Project Three</div>
-          <div class="card">Project Four</div>
-        </div>
-      </section>
-
-      <div class="right-side">
-        <section class="announcements">
-          <h3>Announcements</h3>
-          <div class="announcement-card">
-            <p><strong>Maintenance</strong> – System update scheduled for tonight.</p>
-          </div>
-          <div class="announcement-card">
-            <p><strong>New Policy</strong> – Please review updated guidelines.</p>
-          </div>
-          <div class="announcement-card">
-            <p><strong>Event</strong> – Team meetup on Friday </p>
-          </div>
-        </section>
-
-        <section class="trending">
-          <h3>Trending</h3>
-          <div class="trend-card">@alex – New Project</div>
-          <div class="trend-card">@sara – UX Update</div>
-          <div class="trend-card">@mike – Data Dashboard</div>
-          <div class="trend-card">@emma – Mobile App</div>
-        </section>
-      </div>
-    </main>
+  <div id="player-setup">
+    <input type="text" id="player1-name" placeholder="Player 1 Name">
+    <input type="text" id="player2-name" placeholder="Player 2 Name">
+    <button id="start-btn">Start Game</button>
   </div>
+
+  <div id="scoreboard">
+    <span id="score1">0</span> : <span id="score2">0</span>
+  </div>
+
+  <h2 id="turn-indicator"></h2>
+
+  <div id="gameboard" class="board"></div>
+
+  <div id="result"></div>
+  <button id="restart-btn">Restart Game</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
